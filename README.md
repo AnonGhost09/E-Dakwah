@@ -35,10 +35,8 @@
       </p>
    </li>
   
-     <li>
-      <p>ada table attandence yang berguna untuk merekam kehadiran user yang mengikuti kajian, jika user mengikuti kajian maka akan terdaftar hadir dan akan dimasukanke dalam table attandence
-      </p>
+   <li>
+    <p>ada table attandence yang berguna untuk merekam kehadiran user yang mengikuti kajian, jika user mengikuti kajian maka akan terdaftar hadir dan akan dimasukanke dalam table attandence</p>
    </li>
-  
  </ul>
 
