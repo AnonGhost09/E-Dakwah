@@ -5,6 +5,7 @@ import com.myProject.dakwah.exception.EntityExistException;
 import com.myProject.dakwah.exception.NotFoundException;
 import com.myProject.dakwah.exception.UnauthorizedException;
 import com.myProject.dakwah.models.responses.ErrorResponse;
+import org.hibernate.exception.ConstraintViolationException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.FieldError;
@@ -12,11 +13,8 @@ import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 
-import javax.validation.ConstraintViolation;
-import javax.validation.ConstraintViolationException;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Set;
 
 @RestControllerAdvice
 public class ErrorController {
@@ -34,18 +32,6 @@ public class ErrorController {
                 .body(new ErrorResponse("X03", exception.getMessage()));
     }
 
-    @ExceptionHandler(ConstraintException.class)
-    ResponseEntity<ErrorResponse> handleConstraintViolationException(ConstraintViolationException exception) {
-        Set<ConstraintViolation<?>> violation = exception.getConstraintViolations();
-        List<String> errors = new ArrayList<>();
-        for (ConstraintViolation error : violation) {
-            errors.add(error.getMessage());
-        }
-
-        return ResponseEntity
-                .status(HttpStatus.BAD_REQUEST)
-                .body(new ErrorResponse("X02", errors.toString()));
-    }
 
     @ExceptionHandler(MethodArgumentNotValidException.class)
     public ResponseEntity<ErrorResponse> handleMethodArgumentNotValid(

@@ -11,5 +11,6 @@ public abstract class UrlMappings {
     public static final String USER_URL = "/users";
     public static final String ATTENDANCE_URL = "/attendances";
     public static final String PROFILE_URL = "/profiles";
+    public static final String REPORT_URL = "/reports";
 
 }

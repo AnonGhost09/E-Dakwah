@@ -14,9 +14,8 @@ import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import javax.validation.ConstraintViolationException;
 import java.security.NoSuchAlgorithmException;
-import java.sql.Date;
+
 import java.util.List;
 import java.util.Optional;
 

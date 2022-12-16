@@ -33,7 +33,6 @@ public class Preacher {
 
     @ManyToOne(cascade = CascadeType.PERSIST)
     @JoinColumn(name = "expertise_id")
-    @JsonIgnore
     private Expertise expertise;
 
     @OneToMany(mappedBy = "preacher")

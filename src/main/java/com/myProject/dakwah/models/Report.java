@@ -1,49 +1,58 @@
 package com.myProject.dakwah.models;
 
 public class Report {
-    private Integer totalMosque;
-    private Integer totalKajian;
-    private Integer totalPreacher;
-    private Integer totalUser;
-    private Integer totalUserKajian;
+    private Long totalMosque;
+    private Long totalKajian;
+    private Long totalPreacher;
+    private Long totalUser;
+    private Long totalUserKajian;
 
-    public Integer getTotalMosque() {
+    public Long getTotalMosque() {
         return totalMosque;
     }
 
-    public void setTotalMosque(Integer totalMosque) {
+    public void setTotalMosque(Long totalMosque) {
         this.totalMosque = totalMosque;
     }
 
-    public Integer getTotalKajian() {
+    public Long getTotalKajian() {
         return totalKajian;
     }
 
-    public void setTotalKajian(Integer totalKajian) {
+    public void setTotalKajian(Long totalKajian) {
         this.totalKajian = totalKajian;
     }
 
-    public Integer getTotalPreacher() {
+    public Long getTotalPreacher() {
         return totalPreacher;
     }
 
-    public void setTotalPreacher(Integer totalPreacher) {
+    public void setTotalPreacher(Long totalPreacher) {
         this.totalPreacher = totalPreacher;
     }
 
-    public Integer getTotalUser() {
+    public Long getTotalUser() {
         return totalUser;
     }
 
-    public void setTotalUser(Integer totalUser) {
+    public void setTotalUser(Long totalUser) {
         this.totalUser = totalUser;
     }
 
-    public Integer getTotalUserKajian() {
+    public Long getTotalUserKajian() {
         return totalUserKajian;
     }
 
-    public void setTotalUserKajian(Integer totalUserKajian) {
+    public void setTotalUserKajian(Long totalUserKajian) {
         this.totalUserKajian = totalUserKajian;
+    }
+
+    @Override
+    public String toString() {
+        return "totalMosque=" + totalMosque +
+                ", totalKajian=" + totalKajian +
+                ", totalPreacher=" + totalPreacher +
+                ", totalUser=" + totalUser +
+                ", totalUserKajian=" + totalUserKajian;
     }
 }
