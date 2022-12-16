@@ -1,7 +1,12 @@
 package com.myProject.dakwah.services;
 
-import com.myProject.dakwah.models.Report;
+import com.myProject.dakwah.models.ReportCount;
+import com.myProject.dakwah.models.ReportUserKajian;
+
+import java.util.List;
 
 public interface ReportService {
-    Report getReportingCount() throws Exception;
+    ReportCount getReportingCount() throws Exception;
+
+    List<ReportUserKajian> getReportingUserToKajian() throws Exception;
 }

@@ -1,6 +1,6 @@
 package com.myProject.dakwah.models;
 
-public class Report {
+public class ReportCount {
     private Long totalMosque;
     private Long totalKajian;
     private Long totalPreacher;
@@ -53,6 +53,6 @@ public class Report {
                 ", totalKajian=" + totalKajian +
                 ", totalPreacher=" + totalPreacher +
                 ", totalUser=" + totalUser +
-                ", totalUserKajian=" + totalUserKajian;
+                ", totalUserKajian=" + totalUserKajian+"\n";
     }
 }

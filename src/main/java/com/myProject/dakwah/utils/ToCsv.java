@@ -1,6 +1,6 @@
 package com.myProject.dakwah.utils;
 
-import com.myProject.dakwah.models.Report;
+import com.myProject.dakwah.models.ReportCount;
 
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
@@ -10,7 +10,7 @@ import java.nio.file.Paths;
 import java.nio.file.StandardOpenOption;
 import java.util.List;
 
-public class ToCsv {
+public class ToCsv<T> {
     private final Path path;
 
     public ToCsv(String path) {
@@ -23,11 +23,17 @@ public class ToCsv {
         }
     }
 
-    public void writeData(List<Report> content){
+    public void writeData(List<T> content){
         try{
-            for (Report report:
+            Integer i = 0;
+            for (T reportCount :
                    content) {
-                Files.write(path,report.toString().getBytes(StandardCharsets.UTF_8), StandardOpenOption.CREATE, StandardOpenOption.APPEND);
+                if(i==0){
+                    Files.write(path, reportCount.toString().getBytes(StandardCharsets.UTF_8));
+                }else{
+                    Files.write(path, reportCount.toString().getBytes(StandardCharsets.UTF_8), StandardOpenOption.CREATE, StandardOpenOption.APPEND);
+                }
+                i++;
             }
 
         }catch(IOException e){
