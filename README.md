@@ -22,10 +22,9 @@
     <p> kajian akan dibuat menggunakan id mosque yang mana setiap mosque akan memiliki banyak kajian, lalu dari kajian akan dibuatkan schedulenya 
     yaitu dengan membuat data di table kajian schedule untuk membuat jadwal yang ingin di tetapkan dari kapan dimulai dan berakhir </p>
    </li>
-   
-    <li>
-      <p>ada table expertise, preacher(ustadz) dan gender, isikan table tersebut agar bisa memilih kajian schedule mana yang bisa preacher(ustadz) yang jumpai
-      </p>
+  
+  <li>
+    <p> ada table expertise, preacher(ustadz) dan gender, isikan table tersebut agar bisa memilih kajian schedule mana yang bisa preacher(ustadz) yang jumpai </p>
    </li>
    
    <li>
@@ -35,15 +34,11 @@
          setelah itu user akan bisa memilih kajian dari masjid mana yang mau dipilih
       </p>
    </li>
-   
-    <li>
-      <p>
-        ada table attandence yang berguna untuk merekam kehadiran user yang mengikuti kajian, jika user mengikuti kajian maka akan terdaftar hadir dan akan dimasukan
-        ke dalam table attandence
+  
+     <li>
+      <p>ada table attandence yang berguna untuk merekam kehadiran user yang mengikuti kajian, jika user mengikuti kajian maka akan terdaftar hadir dan akan dimasukanke dalam table attandence
       </p>
    </li>
-   
-   
-   
+  
  </ul>
 
