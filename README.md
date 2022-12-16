@@ -24,9 +24,7 @@
    </li>
    
     <li>
-      <p>
-         ada table expertise, preacher(ustadz) dan gender, isikan table tersebut agar bisa memilih kajian schedule mana yang bisa preacher(ustadz)
-         yang jumpai
+      <p>ada table expertise, preacher(ustadz) dan gender, isikan table tersebut agar bisa memilih kajian schedule mana yang bisa preacher(ustadz) yang jumpai
       </p>
    </li>
    
