@@ -39,4 +39,10 @@
     <p>ada table attandence yang berguna untuk merekam kehadiran user yang mengikuti kajian, jika user mengikuti kajian maka akan terdaftar hadir dan akan dimasukanke dalam table attandence</p>
    </li>
  </ul>
+ 
+ # SWAGGER DOCUMENTASI
+ <strong>isi port dengan port yang sama dengan api port di aplikasi saat run</strong>
+ http://localhost:8080/api/v1/swagger-ui/index.html
+ 
+ 
 
